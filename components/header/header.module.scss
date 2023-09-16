@@ -1,0 +1,68 @@
+@import "../../styles/mixins/colors.scss";
+
+.container {
+  background-color: $purple-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.5px solid $gray-color;
+  width: 100%;
+  opacity: 1;
+  padding: 35px;
+  }
+
+  .logotipo {
+    padding-left: 100px;
+    opacity: 0.8; // Defina a opacidade inicial do logotipo
+  
+    transition: opacity 0.3s ease; // Adicione uma transição suave de opacidade
+  
+    &:hover {
+      opacity: 1; // Aumenta a opacidade ao passar o mouse
+    }
+  }
+  
+
+  .menu {
+    font-size: 22px;
+    a + a {
+      margin-left: 38.9px;
+    }
+  
+    a {
+      color: $white-texto; // Cor do texto normal
+      transition: color 0.3s ease; // Adiciona transições suaves na cor do texto
+  
+      &:hover {
+        color: $gray-color; // Cor do texto ao passar o mouse
+      }
+  
+      &:active {
+        color: #08562E; // Cor do texto ao clicar
+      }
+    }
+  }
+  
+
+  .button {
+    margin-right: 100px;
+    button {
+      padding: 15px 50px;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      background-color: #0DC74F;
+      border: none;
+      color: $white-texto; // Cor do texto
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease; // Adiciona transições suaves
+    }
+  
+    button:hover {
+      background-color: #0AA13E; // Cor ao passar o mouse
+    }
+  
+    button:active {
+      transform: scale(0.95); // Efeito de escala ao clicar
+    }
+  } 
